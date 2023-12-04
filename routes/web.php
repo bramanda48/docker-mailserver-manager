@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 });
+Route::get('/domains', function () {
+    return view('domains');
+});
+Route::get('/domains/setting', function () {
+    return view('domains-setting');
+});

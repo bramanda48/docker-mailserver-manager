@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="{{ asset('tabler/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('tabler/tabler.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('tabler-icons/tabler-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/tabler/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/tabler/tabler.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/tabler-icons/tabler-icons.min.css') }}">
     @vite('resources/css/app.css')
 </head>
 
@@ -17,14 +17,12 @@
     <div class="page">
         <x-header />
         <div class="page-wrapper">
-            <div class="container-xl">
-                @yield('content')
-            </div>
+            @yield('content')
             <x-footer />
         </div>
     </div>
 
-    <script src="{{ asset('public/tabler/tabler.min.js') }}"></script>
+    <script src="{{ asset('plugins/tabler/tabler.min.js') }}"></script>
 </body>
 
 </html>
