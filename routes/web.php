@@ -22,3 +22,9 @@ Route::get('/domains', function () {
 Route::get('/domains/setting', function () {
     return view('domains-setting');
 });
+Route::get('/accounts', function () {
+    return view('accounts');
+});
+Route::get('/accounts/setting', function () {
+    return view('accounts-setting-profile');
+});
