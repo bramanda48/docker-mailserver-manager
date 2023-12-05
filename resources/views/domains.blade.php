@@ -23,13 +23,13 @@
                                     <th width="30%">Domain</th>
                                     <th width="25%">Total Account</th>
                                     <th width="30%">Quota</th>
-                                    <th width="15%" class="w-1"></th>
+                                    <th width="15%"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p class="font-bold">
+                                        <p class="fw-bold">
                                             mail.malang.dev
                                             <i class="ti ti-circle-check-filled text-blue" data-bs-toggle="tooltip"
                                                 data-bs-placement="right" title="Verified"></i>
@@ -46,7 +46,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="progress progress-separated mb-3">
+                                        <div class="progress progress-separated mb-2">
                                             <div class="progress-bar bg-danger" role="progressbar" style="width: 44%"
                                                 aria-label="Regular"></div>
 
@@ -84,7 +84,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p class="font-bold">
+                                        <p class="fw-bold">
                                             mx01.mailserver.com
                                             <i class="ti ti-help-circle-filled text-yellow-600" data-bs-toggle="tooltip"
                                                 data-bs-placement="right" title="Need action to configure"></i>
@@ -101,7 +101,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="progress progress-separated mb-3">
+                                        <div class="progress progress-separated mb-2">
                                             <div class="progress-bar bg-danger" role="progressbar" style="width: 44%"
                                                 aria-label="Regular"></div>
 
@@ -128,7 +128,7 @@
                                             <div class="dropdown-menu dropdown-menu-end" data-popper-placement="top-end"
                                                 style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(0px, -2px, 0px);">
                                                 <a class="dropdown-item" href="{{ url('/domains/setting') }}">
-                                                    Configure Domain
+                                                    Configure DNS Record
                                                 </a>
                                                 <a class="dropdown-item" href="#">
                                                     Manage Account

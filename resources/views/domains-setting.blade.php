@@ -36,7 +36,7 @@
                         <table class="table table-vcenter card-table table-striped">
                             <thead>
                                 <tr>
-                                    <th width="30%">Hostname</th>
+                                    <th width="30%">Domain</th>
                                     <th width="15%">Type</th>
                                     <th width="15%">Status</th>
                                     <th width="20%">Required Content</th>
