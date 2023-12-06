@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Domains')
+@section('title', 'Domain')
 @section('content')
     <div class="page-body">
         <div class="container-xl">
@@ -8,12 +8,12 @@
                     <div class="card">
                         <div class="card-header">
                             <h1 class="card-title w-full text-xl">
-                                Domains
+                                Domain
                             </h1>
                             <div class="card-action">
                                 <a href="#" class="btn btn-outline-dark">
                                     <i class="ti ti-playlist-add leading-none mr-1"></i>
-                                    Add Domains
+                                    Add Domain
                                 </a>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                                 data-bs-toggle="dropdown" aria-expanded="true">Actions</button>
                                             <div class="dropdown-menu dropdown-menu-end" data-popper-placement="top-end"
                                                 style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(0px, -2px, 0px);">
-                                                <a class="dropdown-item" href="{{ url('/domains/setting') }}">
+                                                <a class="dropdown-item" href="{{ url('/domain/setting') }}">
                                                     Configure DNS Record
                                                 </a>
                                                 <a class="dropdown-item" href="#">
@@ -127,7 +127,7 @@
                                                 data-bs-toggle="dropdown" aria-expanded="true">Actions</button>
                                             <div class="dropdown-menu dropdown-menu-end" data-popper-placement="top-end"
                                                 style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(0px, -2px, 0px);">
-                                                <a class="dropdown-item" href="{{ url('/domains/setting') }}">
+                                                <a class="dropdown-item" href="{{ url('/domain/setting') }}">
                                                     Configure DNS Record
                                                 </a>
                                                 <a class="dropdown-item" href="#">

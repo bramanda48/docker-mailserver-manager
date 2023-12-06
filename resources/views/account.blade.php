@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Accounts')
+@section('title', 'Account')
 @section('content')
     <div class="page-body">
         <div class="container-xl">
@@ -8,7 +8,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h1 class="card-title w-full text-xl">
-                                Accounts
+                                Account
                             </h1>
                             <div class="card-action flex">
                                 <a href="#" class="btn btn-outline-dark mr-1">
@@ -36,7 +36,7 @@
                                 <tr>
                                     <td><span class="avatar me-2">BR</span></td>
                                     <td>
-                                        <a href="{{ url('/accounts/setting') }}" class="fw-bold">Bramanda Febri Suwandi</a>
+                                        <a href="{{ url('/account/setting') }}" class="fw-bold">Bramanda Febri Suwandi</a>
                                     </td>
                                     <td>bram@malang.dev</td>
                                     <td>05 December 2023 13:21</td>
@@ -68,7 +68,7 @@
                                 <tr>
                                     <td><span class="avatar me-2">JJ</span></td>
                                     <td>
-                                        <a href="{{ url('/accounts/setting') }}" class="fw-bold">Jhony Joe</a>
+                                        <a href="{{ url('/account/setting') }}" class="fw-bold">Jhony Joe</a>
                                     </td>
                                     <td>bram@manda.test</td>
                                     <td>05 December 2023 13:21</td>

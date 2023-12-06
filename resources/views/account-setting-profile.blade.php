@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Accounts')
+@section('title', 'Account')
 @section('content')
     <div class="page-body">
         <div class="container-xl">
@@ -94,7 +94,7 @@
                                 <p class="card-subtitle">You can set a permanent password if you don't want to use temporary
                                     login codes.</p>
                                 <div class="row g-1">
-                                    <div class="col-4">
+                                    <div class="col-5">
                                         <div class="btn-group w-100"role="group">
                                             <input type="radio" class="btn-check" name="btn-radio-basic"
                                                 id="btn-radio-basic-1" autocomplete="off" checked>

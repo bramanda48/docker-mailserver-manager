@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Domains')
+@section('title', 'Domain')
 @section('content')
     <div class="page-body">
         <div class="container-xl">

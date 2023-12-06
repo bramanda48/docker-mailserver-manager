@@ -16,15 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 });
-Route::get('/domains', function () {
-    return view('domains');
+Route::get('/domain', function () {
+    return view('domain');
 });
-Route::get('/domains/setting', function () {
-    return view('domains-setting');
+Route::get('/domain/setting', function () {
+    return view('domain-setting');
 });
-Route::get('/accounts', function () {
-    return view('accounts');
+Route::get('/account', function () {
+    return view('account');
 });
-Route::get('/accounts/setting', function () {
-    return view('accounts-setting-profile');
+Route::get('/account/setting', function () {
+    return view('account-setting-profile');
 });

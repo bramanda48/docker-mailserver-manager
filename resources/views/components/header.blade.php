@@ -61,22 +61,22 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/domains') }}">
+                        <a class="nav-link" href="{{ url('/domain') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-world-www text-xl leading-none"></i>
                             </span>
                             <span class="nav-link-title">
-                                Domains
+                                Domain
                             </span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/accounts') }}">
+                        <a class="nav-link" href="{{ url('/account') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-users text-xl leading-none"></i>
                             </span>
                             <span class="nav-link-title">
-                                Accounts
+                                Account
                             </span>
                         </a>
                     </li>
@@ -91,12 +91,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/groups') }}">
+                        <a class="nav-link" href="{{ url('/group') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-users-group text-xl leading-none"></i>
                             </span>
                             <span class="nav-link-title">
-                                Groups
+                                Group
                             </span>
                         </a>
                     </li>
