@@ -6,6 +6,8 @@
         </button>
         <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
             <a href="." class="hover:no-underline">
+                <img src="{{ asset('/images/dmo-logo-white.svg') }}" alt="Docker Mailserver" width="40px"
+                    class="inline mr-2">
                 Docker Mailserver Manager
             </a>
         </h1>
@@ -25,7 +27,7 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
                     aria-label="Open user menu">
-                    <span class="avatar avatar-sm" style="background-image: url(./user.svg)"></span>
+                    <span class="avatar avatar-sm" style="background-image: url({{ url('/images/user.svg') }})"></span>
                     <div class="d-none d-xl-block ps-2">
                         <div>John Doe</div>
                         <div class="mt-1 small text-muted">Administrator</div>
@@ -49,7 +51,7 @@
             <div class="container-xl">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./">
+                        <a class="nav-link" href="{{ url('/') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-home text-xl leading-none"></i>
                             </span>
@@ -59,7 +61,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./">
+                        <a class="nav-link" href="{{ url('/domains') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-world-www text-xl leading-none"></i>
                             </span>
@@ -69,17 +71,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./">
-                            <span class="nav-link-icon d-md-none d-lg-inline-block">
-                                <i class="ti ti-shield-check text-xl leading-none"></i>
-                            </span>
-                            <span class="nav-link-title">
-                                SSL Certificates
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./form-elements.html">
+                        <a class="nav-link" href="{{ url('/accounts') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-users text-xl leading-none"></i>
                             </span>
@@ -89,17 +81,27 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="{{ url('/forwarding') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
-                                <i class="ti ti-route-alt-right text-xl leading-none"></i>
+                                <i class="ti ti-route text-xl leading-none"></i>
                             </span>
                             <span class="nav-link-title">
-                                Mail Forwarding
+                                Aliases
                             </span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="{{ url('/groups') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                <i class="ti ti-users-group text-xl leading-none"></i>
+                            </span>
+                            <span class="nav-link-title">
+                                Groups
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/relay') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-affiliate text-xl leading-none"></i>
                             </span>
@@ -109,7 +111,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="{{ url('/audit-log') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-book text-xl leading-none"></i>
                             </span>
@@ -119,7 +121,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="{{ url('/settings') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-settings text-xl leading-none"></i>
                             </span>
