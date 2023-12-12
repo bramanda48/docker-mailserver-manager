@@ -3,168 +3,169 @@
 @section('content')
     <div class="page-body">
         <div class="container-xl">
-            <div class="row row-cards">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1 class="card-title w-full text-xl">
-                                Domain
-                            </h1>
-                            <div class="card-action">
-                                <a href="#" class="btn btn-outline-dark">
-                                    <i class="ti ti-playlist-add leading-none mr-1"></i>
-                                    Add Domain
-                                </a>
-                            </div>
-                        </div>
-                        <table class="table table-vcenter card-table table-striped">
-                            <thead>
-                                <tr>
-                                    <th width="30%">Domain</th>
-                                    <th width="25%">Total Account</th>
-                                    <th width="30%">Quota</th>
-                                    <th width="15%"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p class="fw-bold">
-                                            mail.malang.dev
-                                            <i class="ti ti-circle-check-filled text-blue" data-bs-toggle="tooltip"
-                                                data-bs-placement="right" title="Verified"></i>
-                                        </p>
-                                        <span class="text-muted">Created: 04 December 2023 12:28</span>
-                                    </td>
-                                    <td>
-                                        <div class="total-users">
-                                            <i class="ti ti-users text-muted mr-2"></i>
-                                            5 / <i class="ti ti-infinity"></i>
-                                        </div>
-                                        <div class="total-users-status text-muted">
-                                            4 Active and 1 Inactive
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="progress progress-separated mb-2">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 44%"
-                                                aria-label="Regular"></div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-auto d-flex align-items-center pe-2">
-                                                <span class="legend me-2 bg-danger"></span>
-                                                <span>Reserved</span>
-                                                <span
-                                                    class="d-none d-md-inline d-lg-none d-xxl-inline ms-2 text-muted">915MB</span>
-                                            </div>
-                                            <div class="col-auto d-flex align-items-center ps-2">
-                                                <span class="legend me-2"></span>
-                                                <span>Free</span>
-                                                <span
-                                                    class="d-none d-md-inline d-lg-none d-xxl-inline ms-2 text-muted">612MB</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-end">
-                                        <span class="dropdown">
-                                            <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
-                                                data-bs-toggle="dropdown" aria-expanded="true">Actions</button>
-                                            <div class="dropdown-menu dropdown-menu-end" data-popper-placement="top-end"
-                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(0px, -2px, 0px);">
-                                                <a class="dropdown-item" href="{{ url('/domain/setting') }}">
-                                                    Configure DNS Record
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    Manage Account
-                                                </a>
-                                            </div>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p class="fw-bold">
-                                            mx01.mailserver.com
-                                            <i class="ti ti-help-circle-filled text-yellow-600" data-bs-toggle="tooltip"
-                                                data-bs-placement="right" title="Need action to configure"></i>
-                                        </p>
-                                        <span class="text-muted">Created: 04 December 2023 12:28</span>
-                                    </td>
-                                    <td>
-                                        <div class="total-users">
-                                            <i class="ti ti-users text-muted mr-2"></i>
-                                            10 / 20
-                                        </div>
-                                        <div class="total-users-status text-muted">
-                                            All Account Active
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="progress progress-separated mb-2">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 44%"
-                                                aria-label="Regular"></div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-auto d-flex align-items-center pe-2">
-                                                <span class="legend me-2 bg-danger"></span>
-                                                <span>Reserved</span>
-                                                <span
-                                                    class="d-none d-md-inline d-lg-none d-xxl-inline ms-2 text-muted">915MB</span>
-                                            </div>
-                                            <div class="col-auto d-flex align-items-center ps-2">
-                                                <span class="legend me-2"></span>
-                                                <span>Free</span>
-                                                <span
-                                                    class="d-none d-md-inline d-lg-none d-xxl-inline ms-2 text-muted">612MB</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-end">
-                                        <span class="dropdown">
-                                            <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
-                                                data-bs-toggle="dropdown" aria-expanded="true">Actions</button>
-                                            <div class="dropdown-menu dropdown-menu-end" data-popper-placement="top-end"
-                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(0px, -2px, 0px);">
-                                                <a class="dropdown-item" href="{{ url('/domain/setting') }}">
-                                                    Configure DNS Record
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    Manage Account
-                                                </a>
-                                            </div>
-                                        </span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="card-footer d-flex align-items-center">
-                            <p class="m-0 text-muted">Showing <span>1</span> to <span>8</span> of <span>16</span> entries
-                            </p>
-                            <ul class="pagination m-0 ms-auto">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                        <i class="ti ti-chevron-left"></i>
-                                        prev
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        next
-                                        <i class="ti ti-chevron-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="card-title w-full text-xl">
+                        Domain
+                    </h1>
+                    <div class="card-action">
+                        <a role="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal-domain-add">
+                            <i class="ti ti-playlist-add leading-none mr-1"></i>
+                            Add Domain
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="page-body">
+                <div class="row row-cards mb-3">
+                    <div class="col-4">
+                        <a href="#" class="!no-underline">
+                            <div class="card h-full hover:border-slate-600">
+                                <div class="ribbon bg-green capitalize">Active</div>
+                                <div class="card-body">
+                                    <h2 class="mb-2">mail.malang.dev</h2>
+                                    <div>
+                                        <span class="badge bg-blue-lt">malang.dev</span>
+                                        <span class="badge bg-blue-lt">Kantor Pusat</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <h4 class="mb-2">Account</h4>
+                                            <p class="m-0"><span class="text-xl text-muted">3</span> / <i
+                                                    class="ti ti-infinity"></i></p>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <h4 class="mb-2">Aliases</h4>
+                                            <p class="m-0"><span class="text-xl text-muted">3</span> / <i
+                                                    class="ti ti-infinity"></i></p>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <h4 class="mb-2">Group</h4>
+                                            <p class="m-0"><span class="text-xl text-muted">3</span> / <i
+                                                    class="ti ti-infinity"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="!no-underline">
+                            <div class="card h-full hover:border-slate-600">
+                                <div class="ribbon bg-red capitalize">Need Configure</div>
+                                <div class="card-body">
+                                    <h2 class="mb-2">mx01.mailserver.com</h2>
+                                    <div>
+                                        <span class="badge bg-blue-lt">mailserver.com</span>
+                                        <span class="badge bg-blue-lt">Kantor Cabang</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <h4 class="mb-2">Account</h4>
+                                            <p class="m-0"><span class="text-xl text-muted">3</span> / <i
+                                                    class="ti ti-infinity"></i></p>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <h4 class="mb-2">Aliases</h4>
+                                            <p class="m-0"><span class="text-xl text-muted">3</span> / <i
+                                                    class="ti ti-infinity"></i></p>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <h4 class="mb-2">Group</h4>
+                                            <p class="m-0"><span class="text-xl text-muted">3</span> / <i
+                                                    class="ti ti-infinity"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a role="button" class="!no-underline" data-bs-toggle="modal" data-bs-target="#modal-domain-add">
+                            <div class="card h-full border-dashed hover:border-slate-600">
+                                <div class="card-body flex items-center justify-center">
+                                    <div class="border rounded-3xl w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ti ti-plus"></i>
+                                    </div>
+                                    <strong>Add Domain</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="pagination float-right">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="ti ti-chevron-left"></i>
+                            prev
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            next
+                            <i class="ti ti-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <x-modal id="modal-domain-add" title="Add Domain">
+        <form method="POST" action="{{ url('/domain/store') }}">
+            @csrf
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label required">Domain</label>
+                    <input type="text" class="form-control mb-1" name="domain"
+                        placeholder="Your domain name. ex: mail.example.com"
+                        data-rule-regex="^(?!:\/\/)(?=.{1,255}$)((.{1,63}\.){1,127}(?![0-9]*$)[a-z0-9-]+\.?)$"
+                        autocomplete="off" autofocus required>
+                    <small class="form-hint">
+                        An FQDN (Fully Qualified Domain Name) such as <strong>mail.example.com</strong> is required for
+                        DMS
+                        to function correctly, especially for looking up the correct SSL certificate to use.
+                    </small>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Label</label>
+                    <input type="text" class="form-control mb-1" name="label"
+                        placeholder="Label about the domain with comma separated" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a role="button" class="btn btn-link link-secondary" data-bs-dismiss="modal">
+                    Cancel
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    <span class="spinner spinner-border spinner-border-sm me-2 hidden" role="status"></span>
+                    Submit
+                </button>
+            </div>
+        </form>
+    </x-modal>
+@endsection
+
+@section('script')
+    <script type="text/javascript">
+        // FQDN regex references : https://regexr.com/3g5j0
+        $("#modal-domain-add form")
+            .on("ajaxSuccess", function(event, xhr, settings, data) {
+                console.log(event);
+                console.log(xhr);
+                console.log(settings);
+                console.log(data);
+            })
+            .on("ajaxError", ajaxErrorForm);
+    </script>
 @endsection
