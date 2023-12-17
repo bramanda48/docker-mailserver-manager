@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  label.error {
+    @apply text-red-600;
+    @apply mb-1;
+    font-size: 13px;
+  }
+}
